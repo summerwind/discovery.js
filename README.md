@@ -6,15 +6,13 @@ The Rendering Engine with HTML5 video and Mocha
 これは何？
 -----
 
-Adobe AfterEffectsに付属しているMochaを利用して取得したモーショントラッキング情報を、HTML5ビデオに合成してCanvasに書きだすためのスクリプトです。
-
+Adobe AfterEffectsに付属しているMochaを利用して取得したモーショントラッキング情報を、HTML5ビデオに合成してCanvasに書きだすためのスクリプトです。　　
 レコメガール（http://www.tatsuaki.net/recomegirl/）のレコメンド動画に利用しています。
 
 使い方
 ---
 
-discovery.jsを使うには、まずHTMLのscriptタグで読み込みます。
-
+discovery.jsを使うには、まずHTMLのscriptタグで読み込みます。　　
 discovery.jsはjQueryに依存しているので、先に読み込む必要があります。
 
     <script src="js/jquery.js"></script>
@@ -44,10 +42,7 @@ discovery.jsはjQueryに依存しているので、先に読み込む必要が�
     // 再生開始
     player.play();
 
-上記の例では、まず #player 要素の中にdiscovery.jsのレンダリング用canvas要素が生成されます。
-
-動画は #video の要素が利用され、その中に images/sample.jpg ファイルが画像として合成されます。
-
-モーショントラッキング情報は、Mochaで生成した meta/pin.txt と meta/tracking.txt　がそれぞれ利用されます。
-
+上記の例では、まず #player 要素の中にdiscovery.jsのレンダリング用canvas要素が生成されます。　　
+動画は #video の要素が利用され、その中に images/sample.jpg ファイルが画像として合成されます。　　
+モーショントラッキング情報は、Mochaで生成した meta/pin.txt と meta/tracking.txt　がそれぞれ利用されます。　　
 また、画像の合成は12フレーム目から実行されます。
